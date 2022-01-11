@@ -21,6 +21,10 @@ import android.content.res.Resources
 import android.os.Build
 import android.text.Html
 import android.text.Spanned
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.ViewParent
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -143,4 +147,12 @@ fun formatNights(nights: List<SleepNight>, resources: Resources): Spanned {
 }
 
 
-class TextItemViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)
+class TextItemViewHolder(val textView: View) : RecyclerView.ViewHolder(textView){
+    companion object{
+        fun from(parent: ViewGroup) : TextItemViewHolder{
+            val inflater = LayoutInflater.from(parent.context)
+            val view = inflater.inflate(R.layout.text_item_view, parent, false)
+            return TextItemViewHolder(view)
+        }
+    }
+}
