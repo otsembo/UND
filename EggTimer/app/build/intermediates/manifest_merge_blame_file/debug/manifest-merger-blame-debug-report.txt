@@ -1,0 +1,400 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2019 Google Inc.
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.eggtimernotifications"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="30" />
+24-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:23:5-68
+26-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:23:22-65
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:24:5-79
+27-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:24:22-76
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:25:5-81
+28-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:25:22-78
+29    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+29-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:22:5-67
+29-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:22:22-64
+30    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+30-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:26:5-82
+30-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:26:22-79
+31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+31-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:5-110
+31-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:22-107
+32
+33    <application
+33-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:21:5-48:19
+34        android:allowBackup="true"
+34-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:22:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.3.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/3fad7ea4f0b845c6f6667debb95e1494/core-1.3.1/AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@drawable/egg_icon"
+37-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:23:9-42
+38        android:label="@string/app_name"
+38-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:24:9-41
+39        android:roundIcon="@drawable/egg_notification"
+39-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:25:9-55
+40        android:supportsRtl="true"
+40-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:26:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme" >
+42-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:27:9-40
+43        <activity android:name="com.example.android.eggtimernotifications.MainActivity" >
+43-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:29:9-35:20
+43-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:29:19-47
+44            <intent-filter>
+44-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:30:13-34:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:31:17-68
+45-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:31:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:33:17-76
+47-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:33:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <receiver
+51-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:37:9-41:20
+52            android:name="com.example.android.eggtimernotifications.receiver.AlarmReceiver"
+52-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:38:17-55
+53            android:enabled="true"
+53-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:39:17-39
+54            android:exported="false" >
+54-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:40:17-41
+55        </receiver>
+56        <receiver
+56-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:42:9-46:20
+57            android:name="com.example.android.eggtimernotifications.receiver.SnoozeReceiver"
+57-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:43:17-56
+58            android:enabled="true"
+58-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:44:17-39
+59            android:exported="false" >
+59-->/home/afrigamez/AndroidStudioProjects/UND/EggTimer/app/src/main/AndroidManifest.xml:45:17-41
+60        </receiver>
+61
+62        <provider
+62-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:28:9-34:35
+63            android:name="androidx.work.impl.WorkManagerInitializer"
+63-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:29:13-69
+64            android:authorities="com.example.android.eggtimernotifications.workmanager-init"
+64-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:30:13-68
+65            android:directBootAware="false"
+65-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:31:13-44
+66            android:exported="false"
+66-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:32:13-37
+67            android:multiprocess="true" />
+67-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:33:13-40
+68
+69        <service
+69-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:36:9-41:35
+70            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+70-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:37:13-88
+71            android:directBootAware="false"
+71-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:38:13-44
+72            android:enabled="@bool/enable_system_alarm_service_default"
+72-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:39:13-72
+73            android:exported="false" />
+73-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:40:13-37
+74        <service
+74-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:42:9-48:35
+75            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+75-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:43:13-84
+76            android:directBootAware="false"
+76-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:44:13-44
+77            android:enabled="@bool/enable_system_job_service_default"
+77-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:45:13-70
+78            android:exported="true"
+78-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:46:13-36
+79            android:permission="android.permission.BIND_JOB_SERVICE" />
+79-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:47:13-69
+80
+81        <receiver
+81-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:50:9-55:35
+82            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+82-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:51:13-88
+83            android:directBootAware="false"
+83-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:52:13-44
+84            android:enabled="true"
+84-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:53:13-35
+85            android:exported="false" />
+85-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:54:13-37
+86        <receiver
+86-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:56:9-66:20
+87            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+87-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:57:13-106
+88            android:directBootAware="false"
+88-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:58:13-44
+89            android:enabled="false"
+89-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:59:13-36
+90            android:exported="false" >
+90-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:60:13-37
+91            <intent-filter>
+91-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:62:13-65:29
+92                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+92-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:63:17-87
+92-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:63:25-84
+93                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+93-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:64:17-90
+93-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:64:25-87
+94            </intent-filter>
+95        </receiver>
+96        <receiver
+96-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:67:9-77:20
+97            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+97-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:68:13-104
+98            android:directBootAware="false"
+98-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:69:13-44
+99            android:enabled="false"
+99-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:70:13-36
+100            android:exported="false" >
+100-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:71:13-37
+101            <intent-filter>
+101-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:73:13-76:29
+102                <action android:name="android.intent.action.BATTERY_OKAY" />
+102-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:74:17-77
+102-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:74:25-74
+103                <action android:name="android.intent.action.BATTERY_LOW" />
+103-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:75:17-76
+103-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:75:25-73
+104            </intent-filter>
+105        </receiver>
+106        <receiver
+106-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:78:9-88:20
+107            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+107-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:79:13-104
+108            android:directBootAware="false"
+108-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:80:13-44
+109            android:enabled="false"
+109-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:81:13-36
+110            android:exported="false" >
+110-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:82:13-37
+111            <intent-filter>
+111-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:84:13-87:29
+112                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+112-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:85:17-83
+112-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:85:25-80
+113                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+113-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:86:17-82
+113-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:86:25-79
+114            </intent-filter>
+115        </receiver>
+116        <receiver
+116-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:89:9-98:20
+117            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+117-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:90:13-103
+118            android:directBootAware="false"
+118-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:91:13-44
+119            android:enabled="false"
+119-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:92:13-36
+120            android:exported="false" >
+120-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:93:13-37
+121            <intent-filter>
+121-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:95:13-97:29
+122                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+122-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:96:17-79
+122-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:96:25-76
+123            </intent-filter>
+124        </receiver>
+125        <receiver
+125-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:99:9-110:20
+126            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+126-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:100:13-88
+127            android:directBootAware="false"
+127-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:101:13-44
+128            android:enabled="false"
+128-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:102:13-36
+129            android:exported="false" >
+129-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:103:13-37
+130            <intent-filter>
+130-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:105:13-109:29
+131                <action android:name="android.intent.action.BOOT_COMPLETED" />
+131-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:106:17-79
+131-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:106:25-76
+132                <action android:name="android.intent.action.TIME_SET" />
+132-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:107:17-73
+132-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:107:25-70
+133                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+133-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:108:17-81
+133-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:108:25-78
+134            </intent-filter>
+135        </receiver>
+136        <receiver
+136-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:111:9-120:20
+137            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+137-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:112:13-99
+138            android:directBootAware="false"
+138-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:113:13-44
+139            android:enabled="@bool/enable_system_alarm_service_default"
+139-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:114:13-72
+140            android:exported="false" >
+140-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:115:13-37
+141            <intent-filter>
+141-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:117:13-119:29
+142                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+142-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:118:17-98
+142-->[androidx.work:work-runtime:2.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/cee34f3e941dd7937c6aa9093dba50fe/work-runtime-2.0.0/AndroidManifest.xml:118:25-95
+143            </intent-filter>
+144        </receiver>
+145        <!--
+146             FirebaseMessagingService performs security checks at runtime,
+147             but set to not exported to explicitly avoid allowing another app to call it.
+148        -->
+149        <service
+149-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:28:9-34:19
+150            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+150-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:29:13-82
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:30:13-37
+152            <intent-filter android:priority="-500" >
+152-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:31:13-33:29
+152-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:31:28-51
+153                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+153-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:32:17-78
+153-->[com.google.firebase:firebase-messaging:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/9cdd95b59f27fa40f39ff0ed2f03e193/jetified-firebase-messaging-19.0.1/AndroidManifest.xml:32:25-75
+154            </intent-filter>
+155        </service>
+156        <service
+156-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:27:9-33:19
+157            android:name="com.google.firebase.components.ComponentDiscoveryService"
+157-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:28:13-84
+158            android:exported="false" >
+158-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:29:13-37
+159            <meta-data
+159-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:30:13-32:85
+160                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+160-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:31:17-139
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.android.gms:play-services-measurement-api:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/4369016f74074c3bb6265fc24ceb11e5/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:32:17-82
+162            <meta-data
+162-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:32:13-34:85
+163                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+163-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:33:17-96
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:34:17-82
+165        </service>
+166
+167        <receiver
+167-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:37:9-44:20
+168            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+168-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:38:13-78
+169            android:exported="true"
+169-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:39:13-36
+170            android:permission="com.google.android.c2dm.permission.SEND" >
+170-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:40:13-73
+171            <intent-filter>
+171-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:41:13-43:29
+172                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+172-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:42:17-81
+172-->[com.google.firebase:firebase-iid:19.0.1] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/90bb7ad86e034e59a39e23987dd872ba/jetified-firebase-iid-19.0.1/AndroidManifest.xml:42:25-78
+173            </intent-filter>
+174        </receiver>
+175        <receiver
+175-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:29:9-33:20
+176            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+176-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:30:13-85
+177            android:enabled="true"
+177-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:31:13-35
+178            android:exported="false" >
+178-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:32:13-37
+179        </receiver>
+180        <receiver
+180-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:34:9-42:20
+181            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+181-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:35:13-100
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:36:13-35
+183            android:exported="true"
+183-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:37:13-36
+184            android:permission="android.permission.INSTALL_PACKAGES" >
+184-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:38:13-69
+185            <intent-filter>
+185-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:39:13-41:29
+186                <action android:name="com.android.vending.INSTALL_REFERRER" />
+186-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:17-79
+186-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:25-76
+187            </intent-filter>
+188        </receiver>
+189
+190        <service
+190-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:44:9-47:40
+191            android:name="com.google.android.gms.measurement.AppMeasurementService"
+191-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:45:13-84
+192            android:enabled="true"
+192-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:46:13-35
+193            android:exported="false" />
+193-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:47:13-37
+194        <service
+194-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:48:9-52:72
+195            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+195-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:49:13-87
+196            android:enabled="true"
+196-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:50:13-35
+197            android:exported="false"
+197-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:51:13-37
+198            android:permission="android.permission.BIND_JOB_SERVICE" />
+198-->[com.google.android.gms:play-services-measurement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/d225ef87614c2b41a177612973723728/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:52:13-69
+199
+200        <provider
+200-->[com.google.firebase:firebase-common:18.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/e22cc775d5c6c8dc701fbec0297881b1/jetified-firebase-common-18.0.0/AndroidManifest.xml:12:9-16:39
+201            android:name="com.google.firebase.provider.FirebaseInitProvider"
+201-->[com.google.firebase:firebase-common:18.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/e22cc775d5c6c8dc701fbec0297881b1/jetified-firebase-common-18.0.0/AndroidManifest.xml:13:13-77
+202            android:authorities="com.example.android.eggtimernotifications.firebaseinitprovider"
+202-->[com.google.firebase:firebase-common:18.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/e22cc775d5c6c8dc701fbec0297881b1/jetified-firebase-common-18.0.0/AndroidManifest.xml:14:13-72
+203            android:exported="false"
+203-->[com.google.firebase:firebase-common:18.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/e22cc775d5c6c8dc701fbec0297881b1/jetified-firebase-common-18.0.0/AndroidManifest.xml:15:13-37
+204            android:initOrder="100" />
+204-->[com.google.firebase:firebase-common:18.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/e22cc775d5c6c8dc701fbec0297881b1/jetified-firebase-common-18.0.0/AndroidManifest.xml:16:13-36
+205
+206        <activity
+206-->[com.google.android.gms:play-services-base:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/548e9fe7c0dbc0938b6828b2531865ee/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+207            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+207-->[com.google.android.gms:play-services-base:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/548e9fe7c0dbc0938b6828b2531865ee/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+208            android:exported="false"
+208-->[com.google.android.gms:play-services-base:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/548e9fe7c0dbc0938b6828b2531865ee/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+209            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+209-->[com.google.android.gms:play-services-base:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/548e9fe7c0dbc0938b6828b2531865ee/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+210
+211        <meta-data
+211-->[com.google.android.gms:play-services-basement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/1b90b1be4df66705fb91818db0752e78/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+212            android:name="com.google.android.gms.version"
+212-->[com.google.android.gms:play-services-basement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/1b90b1be4df66705fb91818db0752e78/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+213            android:value="@integer/google_play_services_version" />
+213-->[com.google.android.gms:play-services-basement:17.0.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/1b90b1be4df66705fb91818db0752e78/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+214
+215        <provider
+215-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/66682bac27f64bb463b438dc006b709f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+216            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+216-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/66682bac27f64bb463b438dc006b709f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+217            android:authorities="com.example.android.eggtimernotifications.lifecycle-process"
+217-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/66682bac27f64bb463b438dc006b709f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+218            android:exported="false"
+218-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/66682bac27f64bb463b438dc006b709f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+219            android:multiprocess="true" />
+219-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/afrigamez/.gradle/caches/transforms-2/files-2.1/66682bac27f64bb463b438dc006b709f/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+220    </application>
+221
+222</manifest>
